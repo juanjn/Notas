@@ -1,0 +1,33 @@
+https://git-scm.com/ //Descarga de git
+
+https://github.com/  //Crear cuenta en este sitio
+
+Configurar información de usuario
+
+git config --global user.name "Nombre del usuario"
+git config --global user.email "Nombre del email del usuario"
+
+Crear repositorios
+
+Primero se debe de posicionar en la carpeta que se piensa utilizar para repositorio(Puede ser una carpeta vacia o 
+contener ya varios archivos)
+
+Una vez posicionados en la carpeta que usaremos como repositorio usaremos el comando:
+git init     // Inicializa un repositorio vacio
+
+git add . // se agregan todos los archivos de la carpeta al 
+          //staging area (el punto hace que ingresen todos)
+git add <nombre del archivo>// esto es para que se agregue el archivo en especifico
+                            // al stagin area
+
+git commit -m  //  Agrega todos los archivos del stagin area al repositorio (-m le indica que sean todos)
+
+
+Para subir los archivos a GitHub se utiliza 
+
+git remote add origin https://github.com/juanjn/Notas.git // la URL es del repositorio creado previamente 
+                                                          // en GitHub
+
+git push -u origin master 
+
+
